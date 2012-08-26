@@ -20,6 +20,23 @@
         background: white;
         padding: 4px;
       }
+      .book-cover {
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+      }
+      .author-profile {
+        float: left;
+        margin-right: 0.5em;
+        border-radius: 5px 5px 5px 5px;
+      }
+      p {
+        color: #646464;
+      }
+      .section-break {
+        margin-top: 2em;
+      }
+      h3 {
+        margin-bottom: 0.5em;
+      }
     </style>
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -37,12 +54,49 @@
 
     <div class="container">
 
+      <div class="page-header">
+        <div style="float:right;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://effectivejs.com" data-text="Effective JavaScript, by @littlecalculist" data-via="littlecalculist" data-dnt="true">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+        <h1>Effective JavaScript <small>by David Herman</small></h1>
+      </div>
+
+      <div class="row">
+        <div class="span8 columns">
+          <p><strong>Effective JavaScript</strong> is an in-depth look
+          at the JavaScript programming language and how to use it
+          effectively to write more portable, robust, and maintainable
+          applications and libraries. Using the concise,
+          scenario-driven style of
+          the <a href="http://www.informit.com/esds">Effective
+          Software Development Series</a>, this book brings together
+          tips, techniques, and realistic code examples to explain the
+          important concepts in JavaScript.</p>
+
+          <p>Approximately 300 pages. Available soon from <a href="http://www.pearsonhighered.com/educator/product/Effective-JavaScript-68-Specific-Ways-to-Harness-the-Power-of-JavaScript/9780321812186.page">Pearson Higher Education</a>.</p>
+
+          <p class="section-break"><a class="btn btn-primary btn-medium" href="http://www.pearsonhighered.com/educator/product/Effective-JavaScript-68-Specific-Ways-to-Harness-the-Power-of-JavaScript/9780321812186.page">View at Pearson &raquo;</a> <a class="btn btn-secondary btn-medium" href="http://github.com/effectivejs/code">Source code &raquo;</a></p>
+
+          <h3 class="section-break">Who this book is for</h3>
+
+          <p>This book is for anyone looking for a thorough understanding of JavaScript. It is especially aimed at programmers who are just learning JavaScript or existing JavaScript programmers interested in deepening their knowledge of the language and its most important idioms.</p>
+
+          <h3>About the author</h3>
+
+          <p><img src="./img/profile.jpg" class="author-profile"> David Herman is a Principal Researcher at Mozilla Research. He holds a BA in Computer Science from Grinnell College and an MS and PhD in Computer Science from Northeastern University. David serves on Ecma TC39, the committee responsible for the standardization of JavaScript.</p>
+        </div>
+        <div class="span4 columns">
+          <img src="./img/book-thumbnail.jpg" class="book-cover">
+        </div>
+      </div>
+
+<!--
       <div class="hero-unit">
         <div class="book-thumbnail"><img src="./img/book-thumbnail.jpg" width="110"></div>
         <h1>Effective JavaScript</h1>
         <p>by David Herman</p>
         <p><a class="btn btn-primary btn-large" href="http://github.com/effectivejs/code">View the code &raquo;</a></p>
       </div>
+-->
 
 <!--
       <div class="row">
