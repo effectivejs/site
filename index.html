@@ -34,14 +34,45 @@
       .section-break {
         margin-top: 2em;
       }
-      .btn-effective {
-        background-color: rgb(44, 101, 128);
-        background-image: -moz-linear-gradient(center top, rgb(64, 141, 178), rgb(64, 101, 178));
-        background-repeat: repeat-x;
-        border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+      .btn-effective,
+      .btn-effective:hover {
         color: white;
         text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
       }
+
+      .btn-effective.active {
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      .btn-effective {
+        background-color: #4065b2;
+        *background-color: #404ab2;
+        background-image: -ms-linear-gradient(top, #408db2, #4065b2);
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#408db2), to(#4065b2));
+        background-image: -webkit-linear-gradient(top, #408db2, #4065b2);
+        background-image: -o-linear-gradient(top, #408db2, #4065b2);
+        background-image: -moz-linear-gradient(top, #408db2, #4065b2);
+        background-repeat: repeat-x;
+        border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+        filter: progid:dximagetransform.microsoft.gradient(startColorstr='#408db2', endColorstr='#4065b2', GradientType=0);
+        filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+      }
+
+      .btn-effective:hover,
+      .btn-effective:active,
+      .btn-effective.active,
+      .btn-effective.disabled,
+      .btn-effective[disabled] {
+        background-color: #4065b2;
+        *background-color: #4058a8;
+      }
+
+      .btn-effective:active,
+      .btn-effective.active {
+        background-color: #404ab2 \9;
+      }
+
       h3 {
         margin-bottom: 0.5em;
       }
@@ -53,9 +84,7 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-<!--
-    <link rel="shortcut icon" href="./ico/favicon.ico">
--->
+    <link rel="shortcut icon" href="./favicon.ico">
   </head>
 
   <body>
@@ -98,38 +127,9 @@
       </div>
 
 <!--
-      <div class="hero-unit">
-        <div class="book-thumbnail"><img src="./img/book-thumbnail.jpg" width="110"></div>
-        <h1>Effective JavaScript</h1>
-        <p>by David Herman</p>
-        <p><a class="btn btn-primary btn-large" href="http://github.com/effectivejs/code">View the code &raquo;</a></p>
-      </div>
--->
-
-<!--
-      <div class="row">
-
-        <div class="span4">
-          <h2>Barnes &amp; Noble</h2>
-          <p><a class="btn" href="http://www.barnesandnoble.com/w/effective-javascript-david-herman/1111580860?ean=9780321812186">Pre-order now &raquo;</a></p>
-       </div>
-
-        <div class="span4">
-          <h2>Amazon</h2>
-          <p><a class="btn" href="http://www.amazon.com/Effective-JavaScript-Specific-Software-Development/dp/0321812182">Pre-order now &raquo;</a></p>
-        </div>
-
-        <div class="span4">
-          <h2>Powell&rsquo;s</h2>
-          <p><a class="btn" href="http://www.powells.com/biblio/62-9780321812186-0">Pre-order now &raquo;</a></p>
-        </div>
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; Company 2012</p>
-      </footer>
+http://www.barnesandnoble.com/w/effective-javascript-david-herman/1111580860?ean=9780321812186
+http://www.amazon.com/Effective-JavaScript-Specific-Software-Development/dp/0321812182
+http://www.powells.com/biblio/62-9780321812186-0
 -->
 
     </div> <!-- /container -->
